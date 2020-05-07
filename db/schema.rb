@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(version: 2020_04_18_042912) do
   create_table "devices", force: :cascade do |t|
     t.string "name"
     t.string "serial_number"
+    t.decimal "latitude", precision: 10, scale: 6
+    t.decimal "longitude", precision: 10, scale: 6
     t.integer "device_status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -24,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_04_18_042912) do
     t.integer "device_id", null: false
     t.decimal "value", precision: 5, scale: 2
     t.integer "measurement_unit"
+    t.integer "measurement_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["device_id"], name: "index_measurements_on_device_id"
