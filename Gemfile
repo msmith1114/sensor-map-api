@@ -20,6 +20,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'rack-cors'
 
 gem 'jsonapi-resources'
+gem 'mqtt', :git => 'https://github.com/njh/ruby-mqtt.git'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

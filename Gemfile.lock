@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/njh/ruby-mqtt.git
+  revision: d1a9ad7093c7259f8b53c8a7287609c5501a8aa3
+  specs:
+    mqtt (0.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -203,6 +209,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   jsonapi-resources
   listen (>= 3.0.5, < 3.2)
+  mqtt!
   puma (~> 4.1)
   rack-cors
   rails (~> 6.0.2, >= 6.0.2.2)
