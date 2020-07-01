@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+Device.all.each do |device|
+    device.latitude = Faker::Address.latitude
+    device.longitude = Faker::Address.longitude
+    device.save
+end

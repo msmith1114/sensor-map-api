@@ -22,6 +22,8 @@ gem 'rack-cors'
 gem 'jsonapi-resources'
 gem 'mqtt', :git => 'https://github.com/njh/ruby-mqtt.git'
 
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
